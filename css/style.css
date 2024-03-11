@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+html {
+  font-size: 10px;
+ 
+}
+body {
+  background-color: white;
+  color: black;
+  height: 900px;
+}
+body.dark {
+	background: #616060;
+  color: #000000;
+}
+.checkbox {
+	opacity: 0;
+  margin-right: 100px;
+
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+#wrapper {
+  width: 96rem;
+  margin: auto;
+}
+
+#control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(126, 155, 189);
+  font-size: 1.6rem;
+}
+
+.control__page-num {
+  display: inline-block;
+  padding-top: 0.3rem;
+}
+
+.control__button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: navy;
+  text-decoration: underline;
+  font-size: 1.6rem;
+  padding-bottom: 0.5rem;
+}
+
+#main {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+#suras {
+  top: 1.5rem;
+  width: 20rem;
+  height: 43rem;
+  overflow: auto;
+}
+#suras .active {
+  background-color: navy;
+  color: white;
+}
+#suras .active a {
+  color: white;
+}
+
+.suras__table {
+  font-size: 1.6rem;
+}
+
+.suras__table th,
+.suras__table td {
+  text-align: center;
+}
+
+#page {
+  position: relative;
+  height: 43rem;
+  width: 29rem;
+  margin-right: 2rem;
+}
+#page a:hover div {
+  background-color: yellow;
+  opacity: 0.2;
+  filter: alpha(opacity=25);
+}
+#page a.active div {
+  background-color: blue;
+  opacity: 0.2;
+  filter: alpha(opacity=25);
+}
+#page div {
+  position: absolute;
+}
+
+#tafseer {
+  height: 43rem;
+  width: 29rem;
+  background-color: #cecaca;
+  overflow: auto;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
