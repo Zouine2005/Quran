@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" >
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="shortcut icon" href="./zoro.jpg" type="image/x-icon">
+    <title>القرآن الكريم</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <h1 style=" text-align: center;">القرآن الكريم</h1>
+
+        <div id="control" class="text-center">
+            <button data-offset="-100" aria-label="Go back by hundred pages" class="control__button">
+                &#60;&#60;&#60;
+            </button>&#160;
+            <button data-offset="-10" aria-label="Go back by ten pages" class="control__button">
+                &#60;&#60;
+            </button>&#160;
+            <button data-offset="-1" aria-label="Go back by one page" class="control__button">
+                &#60;
+            </button>&#160;
+            <span class="control__page-num"></span>&#160;
+            <button data-offset="1" aria-label="Go forward by one page" class="control__button">
+                &#62;
+            </button>&#160;
+            <button data-offset="10" aria-label="Go forward by ten pages" class="control__button">
+                &#62;&#62;
+            </button>&#160;
+            <button data-offset="100" aria-label="Go forward by hundred pages" class="control__button">
+                &#62;&#62;&#62;
+            </button>&#160;
+        </div>
+
+        <div id="main" class="row">
+
+            <div id="suras" class="col-md-4">
+                <table class="suras__table table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>اسم</th>
+                            <th>صفحة</th>
+                            <th>عدد الآيات</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Loading ...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <br><br><br>
+
+            <div id="page" class="col-md-2.5" >
+                Loading ...
+            </div>
+            <br><br>
+            <div id="tafseer" class="col-md-4">
+                Loading ...
+            </div>
+        </div><br><br>
+        <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+                <div class="ball"></div>
+            </label>
+    </div>
+    </div>
+    
+    <script>
+        
+        </script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/jquery.hotkey.js"></script>
+    <script src="js/quran.js"></script>
+</body>
+
+</html>
