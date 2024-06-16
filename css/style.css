@@ -140,3 +140,48 @@ body.dark {
   margin-right: 1rem;
   font-size: 1.6rem;
 }
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  #wrapper {
+    width: 80rem;
+  }
+
+  #suras, #page, #tafseer {
+    max-width: 25rem;
+  }
+}
+
+@media (max-width: 992px) {
+  #wrapper {
+    width: 60rem;
+  }
+
+  #suras, #page, #tafseer {
+    max-width: 20rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #wrapper {
+    width: 100%;
+  }
+
+  #suras, #page, #tafseer {
+    max-width: 100%;
+    height: auto; /* Allow auto height */
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 8px; /* Reduce font size */
+  }
+
+  #control {
+    font-size: 1.4rem; /* Reduce font size */
+  }
+
+  .control__button {
+    font-size: 1.4rem; /* Reduce font size */
+  }
+}
